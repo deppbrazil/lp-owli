@@ -1,0 +1,264 @@
+/* === Flexbox === */
+.container,
+.container__wrapper,
+.container__wrapper__content,
+.container__wrapper__content__text,
+.container__wrapper__content__text__item,
+.container__wrapper__form,
+.footer,
+.container__wrapper__network {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === Header ===*/
+.navbar {
+    width: 100%;
+    height: auto;
+}
+
+.navbar__container {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+}
+
+.brand-superlogica {
+    width: 120px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-image: url("../brand/superlogica.svg");
+}
+
+/* === Sections ===*/
+.container {
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.container__wrapper {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    justify-content: space-between;
+}
+
+/* === Section 1 ===*/
+.container__text {
+    width: 330px;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container__images {
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.container__images__phone {
+    width: 300px;
+    height: 350px;
+    margin-top: 50px;
+    margin-left: 100px;
+    position: absolute;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../elements/phone.png");
+}
+
+.container__images__credit-card {
+    width: 180px;
+    height: 300px;
+    margin-left: 35px;
+    position: absolute;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../elements/credit-card.png");
+}
+
+.container__images__digital {
+    width: 350px;
+    height: 350px;
+    bottom: -180px;
+    left: 20px;
+    position: absolute;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../elements/digital.png");
+}
+
+/* === Section 2 ===*/
+.container__wrapper--column {
+    flex-direction: column;
+}
+
+.container__wrapper__content {
+    justify-content: space-around;
+}
+
+.container__wrapper__content__text {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.container__wrapper__content__text__icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container__wrapper__content__text__icon--metrics {
+    background-image: url("../elements/metrics.png");
+}
+
+.container__wrapper__content__text__icon--ticket {
+    background-image: url("../elements/ticket.png");
+}
+
+.container__wrapper__content__text__item {
+    justify-content: flex-start;
+}
+
+.arrow-item-list {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;  
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../elements/arrow-item-list.png");
+}
+
+.container__wrapper__content__image__element {
+    margin: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container__wrapper__content__image__element--money {
+    width: 280px;
+    height: 280px;
+    background-image: url("../elements/money.png");
+}
+
+.container__wrapper__content__image__element--hand-card {
+    width: 380px;
+    height: 380px;
+    background-image: url("../elements/hand-card.png");
+}
+
+/* === Section 3 === */
+.container__wrapper__text {
+    width: 350px;
+}
+
+.container__wrapper__form {
+    width: 350px;
+    height: auto;
+}
+
+.container__wrapper__card-phone {
+    width: 300px;
+    height: 300px;
+}
+
+/* === Section 4 === */
+.container__wrapper__card-phone {
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../elements/card-phone.png");
+}
+
+/* === Footer ===*/
+.footer {
+    width: 100%;
+    height: 100px;
+}
+
+.container__wrapper__network {
+    width: auto;
+    height: auto;
+    justify-content: flex-start;
+}
+
+.container__wrapper__network__item {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container__wrapper__network__item--facebook {
+    background-image: url("../elements/facebook.png");
+}
+
+.container__wrapper__network__item--linkedin {
+    background-image: url("../elements/linkedin.png");
+}
+
+.container__wrapper__network__item--instagram {
+    background-image: url("../elements/blogger.png      ");
+}
+
+/* === Text === */
+.margin-top {
+    margin-top: 20px;
+}
+
+.h1 {
+    font-size: 3em;
+    line-height: 35px;
+    font-family: adelle;
+    font-weight: 100;
+}
+
+.h1 b {
+    font-size: 32px;
+    line-height: 35px;
+    font-family: adelle;
+    font-weight: 600;
+}
+
+.h1--small {
+    font-size: 2.8em;
+    line-height: 33px;
+    font-family: adelle;
+    font-weight: 600;
+}
+
+.h2 {
+    font-size: 2.5em;
+    line-height: 30px;
+    font-family: adelle;
+    font-weight: 400;
+}
+
+.p {
+    font-size: 1.8em;
+    line-height: 25px;
+    font-family: proxima-nova;
+    font-weight: 400;
+}

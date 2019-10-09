@@ -1,0 +1,19 @@
+.bg__purple-blue {
+    background-image: linear-gradient(294deg, #76d3fe, #712ccb);
+}
+
+.bg__blue-green {
+    background-image: linear-gradient(294deg, #00dec3, #0097d1);
+}
+
+.bg__black-green--doted {
+    background-image: radial-gradient(circle at 66% 0, #3d3c41, #1d1d1d);
+}
+
+.tx__white {
+    color: #ffffff;
+} 
+
+.tx__dark {
+    color: #333a46;
+}
