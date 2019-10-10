@@ -17,6 +17,7 @@
 .navbar {
     width: 100%;
     height: auto;
+    border: 3px solid black;
 }
 
 .navbar__container {
@@ -24,6 +25,7 @@
     max-width: 1000px;
     height: auto;
     margin: auto;
+    border: 3px solid black;
 }
 
 .brand-superlogica {
@@ -33,14 +35,16 @@
     background-size: 100%;
     background-position: center;
     background-image: url("../brand/superlogica.svg");
+    border: 3px solid black;
 }
 
-/* === Sections ===*/
+/* === All sections ===*/
 .container {
     width: 100%;
     height: auto;
     padding-top: 100px;
     padding-bottom: 100px;
+    border: 3px solid black;
 }
 
 .container__wrapper {
@@ -48,43 +52,51 @@
     max-width: 1000px;
     height: auto;
     justify-content: space-between;
+    border: 3px solid black;
 }
 
 /* === Section 1 ===*/
 .container__text {
-    width: 330px;
+    width: 400px;
     height: auto;
     flex-direction: column;
     align-items: flex-start;
+    border: 3px solid black;
 }
 
 .container__images {
     width: 400px;
-    height: 400px;
+    height: 500px;
     position: relative;
+    border: 3px solid yellow;
 }
 
 .container__images__phone {
     width: 300px;
-    height: 350px;
-    margin-top: 50px;
+    height: 100vh;
+    min-height: 400px;
+    max-height: 900px;
     margin-left: 100px;
     position: absolute;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("../elements/phone.png");
+    border: 3px solid black;
 }
 
 .container__images__credit-card {
-    width: 180px;
-    height: 300px;
-    margin-left: 35px;
+    width: 330px;
+    height: 50vh;
+    min-height: 250px;
+    margin-left: -80px;
+    margin-top: -80px;
     position: absolute;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("../elements/credit-card.png");
+    border: 3px solid red;
 }
 
 .container__images__digital {
@@ -97,21 +109,33 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("../elements/digital.png");
+    border: 3px solid black;
 }
 
 /* === Section 2 ===*/
+.container__wrapper__h1 {
+    width: 55%;
+    height: auto;
+    text-align: center;
+    border: 1px solid red;
+}
+
 .container__wrapper--column {
     flex-direction: column;
+    border: 3px solid red;
 }
 
 .container__wrapper__content {
+    width: 100%;
     justify-content: space-around;
+    border: 3px solid black;
 }
 
 .container__wrapper__content__text {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+    border: 3px solid black;
 }
 
 .container__wrapper__content__text__icon {
@@ -122,6 +146,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    border: 3px solid black;
 }
 
 .container__wrapper__content__text__icon--metrics {
@@ -151,6 +176,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    border: 3px solid black;
 }
 
 .container__wrapper__content__image__element--money {
@@ -168,16 +194,12 @@
 /* === Section 3 === */
 .container__wrapper__text {
     width: 350px;
+    border: 3px solid black;
 }
 
 .container__wrapper__form {
     width: 350px;
     height: auto;
-}
-
-.container__wrapper__card-phone {
-    width: 300px;
-    height: 300px;
 }
 
 /* === Section 4 === */
@@ -188,18 +210,21 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("../elements/card-phone.png");
+    border: 3px solid black;
 }
 
 /* === Footer ===*/
 .footer {
     width: 100%;
     height: 100px;
+    border: 3px solid black;
 }
 
 .container__wrapper__network {
     width: auto;
     height: auto;
     justify-content: flex-start;
+    border: 3px solid black;
 }
 
 .container__wrapper__network__item {
@@ -209,6 +234,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: 3px solid black;
 }
 
 .container__wrapper__network__item--facebook {
@@ -221,44 +247,4 @@
 
 .container__wrapper__network__item--instagram {
     background-image: url("../elements/blogger.png      ");
-}
-
-/* === Text === */
-.margin-top {
-    margin-top: 20px;
-}
-
-.h1 {
-    font-size: 3em;
-    line-height: 35px;
-    font-family: adelle;
-    font-weight: 100;
-}
-
-.h1 b {
-    font-size: 32px;
-    line-height: 35px;
-    font-family: adelle;
-    font-weight: 600;
-}
-
-.h1--small {
-    font-size: 2.8em;
-    line-height: 33px;
-    font-family: adelle;
-    font-weight: 600;
-}
-
-.h2 {
-    font-size: 2.5em;
-    line-height: 30px;
-    font-family: adelle;
-    font-weight: 400;
-}
-
-.p {
-    font-size: 1.8em;
-    line-height: 25px;
-    font-family: proxima-nova;
-    font-weight: 400;
 }
