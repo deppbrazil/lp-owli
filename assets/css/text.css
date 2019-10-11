@@ -1,18 +1,22 @@
 /* === Texts === */
+.margin-top--big {
+    margin-top: 50px;
+}
+
 .margin-top {
     margin-top: 20px;
 }
 
 .h1 {
-    font-size: 3.5em;
-    line-height: 45px;
+    font-size: 4em;
+    line-height: 55px;
     font-family: adelle;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .h1 b {
-    font-size: 32px;
-    line-height: 35px;
+    font-size: 40px;
+    line-height: 55px;
     font-family: adelle;
     font-weight: 600;
 }

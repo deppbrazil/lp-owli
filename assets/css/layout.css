@@ -17,7 +17,6 @@
 .navbar {
     width: 100%;
     height: auto;
-    border: 3px solid black;
 }
 
 .navbar__container {
@@ -25,7 +24,6 @@
     max-width: 1000px;
     height: auto;
     margin: auto;
-    border: 3px solid black;
 }
 
 .brand-superlogica {
@@ -35,16 +33,13 @@
     background-size: 100%;
     background-position: center;
     background-image: url("../brand/superlogica.svg");
-    border: 3px solid black;
 }
 
 /* === All sections ===*/
 .container {
     width: 100%;
     height: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    border: 3px solid black;
+    min-height: 100vh;
 }
 
 .container__wrapper {
@@ -52,7 +47,6 @@
     max-width: 1000px;
     height: auto;
     justify-content: space-between;
-    border: 3px solid black;
 }
 
 /* === Section 1 ===*/
@@ -61,92 +55,84 @@
     height: auto;
     flex-direction: column;
     align-items: flex-start;
-    border: 3px solid black;
 }
 
 .container__images {
     width: 400px;
-    height: 500px;
-    position: relative;
-    border: 3px solid yellow;
+    height: 400px;
+    right: 0;
+    position: absolute;
+
 }
 
 .container__images__phone {
     width: 300px;
-    height: 100vh;
+    height: 75vh;
     min-height: 400px;
     max-height: 900px;
-    margin-left: 100px;
     position: absolute;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("../elements/phone.png");
-    border: 3px solid black;
 }
 
 .container__images__credit-card {
     width: 330px;
     height: 50vh;
     min-height: 250px;
-    margin-left: -80px;
-    margin-top: -80px;
+    margin-left: -180px;
+    margin-top: -60px;
     position: absolute;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("../elements/credit-card.png");
-    border: 3px solid red;
 }
 
 .container__images__digital {
-    width: 350px;
-    height: 350px;
-    bottom: -180px;
-    left: 20px;
+    width: 480px;
+    height: 480px;
+    bottom: -250px;
+    right: 80px;
+    opacity: .8;
     position: absolute;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("../elements/digital.png");
-    border: 3px solid black;
 }
 
 /* === Section 2 ===*/
 .container__wrapper__h1 {
-    width: 55%;
+    width: 70%;
     height: auto;
     text-align: center;
-    border: 1px solid red;
 }
 
 .container__wrapper--column {
     flex-direction: column;
-    border: 3px solid red;
 }
 
 .container__wrapper__content {
     width: 100%;
     justify-content: space-around;
-    border: 3px solid black;
 }
 
 .container__wrapper__content__text {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    border: 3px solid black;
 }
 
 .container__wrapper__content__text__icon {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     margin-right: 5px;
     margin-bottom: 20px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    border: 3px solid black;
 }
 
 .container__wrapper__content__text__icon--metrics {
@@ -176,65 +162,74 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    border: 3px solid black;
 }
 
 .container__wrapper__content__image__element--money {
-    width: 280px;
-    height: 280px;
+    width: 330px;
+    height: 330px;
     background-image: url("../elements/money.png");
 }
 
 .container__wrapper__content__image__element--hand-card {
-    width: 380px;
-    height: 380px;
+    width: 480px;
+    height: 480px;
+    margin-bottom: 0;
     background-image: url("../elements/hand-card.png");
 }
 
 /* === Section 3 === */
 .container__wrapper__text {
-    width: 350px;
-    border: 3px solid black;
-}
-
-.container__wrapper__form {
-    width: 350px;
-    height: auto;
+    width: 450px;
 }
 
 /* === Section 4 === */
+.container--bg {
+    width: 110%;
+    height: 100%;
+    margin-top: -100px;
+    background-position: top;
+    background-size: contain;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url("../elements/elemento-05\ copy.png");
+}
+
 .container__wrapper__card-phone {
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
+    margin-top: -150px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("../elements/card-phone.png");
-    border: 3px solid black;
 }
 
 /* === Footer ===*/
 .footer {
     width: 100%;
     height: 100px;
-    border: 3px solid black;
 }
 
 .container__wrapper__network {
     width: auto;
     height: auto;
     justify-content: flex-start;
-    border: 3px solid black;
 }
 
 .container__wrapper__network__item {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     margin: 10px;
+    cursor: pointer;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border: 3px solid black;
+    transition: all .2s;
+}
+
+.container__wrapper__network__item:hover {
+    opacity: .5;
+    transform: translateY(1px);
 }
 
 .container__wrapper__network__item--facebook {
@@ -246,5 +241,10 @@
 }
 
 .container__wrapper__network__item--instagram {
-    background-image: url("../elements/blogger.png      ");
+    background-image: url("../elements/instagram.png");
+}
+
+/* === Media queries === */
+@media only screen and (max-width: 992px) {
+
 }

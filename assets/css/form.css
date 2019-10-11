@@ -1,0 +1,19 @@
+.container__wrapper__form,
+.hbspt-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__wrapper__form {
+    width: 350px;
+    height: 550px;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.39);
+    background-color: #ffffff;
+}
