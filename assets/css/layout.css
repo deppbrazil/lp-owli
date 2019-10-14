@@ -33,7 +33,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    background-image: url("../brand/superlogica.svg");
+    background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/brand/superlogica.svg");
 }
 
 /* === All sections ===*/
@@ -78,7 +78,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../elements/phone.png");
+    background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/image/phone.png");
 }
 
 .container__images__credit-card {
@@ -90,7 +90,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../elements/credit-card.png");
+    background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/image/credit-card.png");
 }
 
 .container__images__digital {
@@ -103,7 +103,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../elements/digital.png");
+    background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/image/digital.png");
 }
 
 /* === Section 2 ===*/
@@ -140,11 +140,11 @@
 }
 
 .container__wrapper__content__text__icon--metrics {
-    background-image: url("../elements/metrics.png");
+    background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/icons/metrics.png");
 }
 
 .container__wrapper__content__text__icon--ticket {
-    background-image: url("../elements/ticket.png");
+    background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/icons/ticket.png");
 }
 
 .container__wrapper__content__text__item {
@@ -158,7 +158,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../elements/arrow-item-list.png");
+    background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/icons/arrow-item-list.png");
 }
 
 .container__wrapper__content__image__element {
@@ -171,14 +171,14 @@
 .container__wrapper__content__image__element--money {
     width: 330px;
     height: 330px;
-    background-image: url("../elements/money.png");
+    background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/image/money.png");
 }
 
 .container__wrapper__content__image__element--hand-card {
     width: 480px;
     height: 480px;
     margin-bottom: 0;
-    background-image: url("../elements/hand-card.png");
+    background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/image/hand-card.png");
 }
 
 /* === Section 3 === */
@@ -196,7 +196,7 @@
     background-size: contain;
     position: absolute;
     background-repeat: no-repeat;
-    background-image: url("../elements/background.png");
+    background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/image/background.png");
 }
 
 .container__wrapper__card-phone {
@@ -206,7 +206,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../elements/card-phone.png");
+    background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/image/card-phone.png");
 }
 
 /* === Footer ===*/
@@ -238,17 +238,16 @@
 }
 
 .container__wrapper__network__item--facebook {
-    background-image: url("../elements/facebook.png");
+    background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/icons/facebook.png");
 }
 
 .container__wrapper__network__item--linkedin {
-    background-image: url("../elements/linkedin.png");
+    background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/icons/linkedin.png");
 }
 
 .container__wrapper__network__item--instagram {
-    background-image: url("../elements/instagram.png");
+    background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/icons/instagram.png");
 }
-
 
 /* === Media queries === */
 @media only screen and (max-width: 992px) {
