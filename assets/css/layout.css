@@ -22,6 +22,7 @@
 .navbar__container {
     width: 100%;
     max-width: 1000px;
+    padding-left: 50px;
     height: auto;
     margin: auto;
 }
@@ -40,37 +41,40 @@
     width: 100%;
     height: auto;
     min-height: 100vh;
+    margin: auto;
 }
 
 .container__wrapper {
     width: 100%;
     max-width: 1000px;
+    padding-left: 50px;
+    padding-right: 50px;
     height: auto;
     justify-content: space-between;
 }
 
 /* === Section 1 ===*/
 .container__text {
-    width: 400px;
+    width: 450px;
     height: auto;
     flex-direction: column;
     align-items: flex-start;
 }
 
 .container__images {
-    width: 400px;
-    height: 400px;
+    width: auto;
+    height: auto;
     right: 0;
-    position: absolute;
+    position: relative;
 
 }
 
 .container__images__phone {
-    width: 300px;
-    height: 75vh;
+    width: 330px;
+    height: 85vh;
     min-height: 400px;
     max-height: 900px;
-    position: absolute;
+    position: relative;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -78,12 +82,11 @@
 }
 
 .container__images__credit-card {
-    width: 330px;
+    width: 270px;
     height: 50vh;
     min-height: 250px;
-    margin-left: -180px;
-    margin-top: -60px;
-    position: absolute;
+    margin-left: -120px;
+    position: relative;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -91,12 +94,12 @@
 }
 
 .container__images__digital {
-    width: 480px;
-    height: 480px;
-    bottom: -250px;
-    right: 80px;
+    width: 500px;
+    height: 500px;
+    margin-top: 400px;
+    margin-left: -150px;
     opacity: .8;
-    position: absolute;
+    position: relative;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -107,6 +110,7 @@
 .container__wrapper__h1 {
     width: 70%;
     height: auto;
+    padding-top: 70px;
     text-align: center;
 }
 
@@ -184,8 +188,9 @@
 
 /* === Section 4 === */
 .container--bg {
-    width: 110%;
+    width: 115%;
     height: 100%;
+    opacity: .5;
     margin-top: -100px;
     background-position: top;
     background-size: contain;
@@ -244,7 +249,11 @@
     background-image: url("../elements/instagram.png");
 }
 
+
 /* === Media queries === */
 @media only screen and (max-width: 992px) {
-
+    .container__wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
