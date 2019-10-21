@@ -1,5 +1,6 @@
 .s3__container__wrapper__form,
-.actions {
+.actions,
+.hs-form-radio {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,9 +8,9 @@
 }
 
 .s3__container__wrapper__form {
-    width: 300px;
+    width: 350px;
     height: auto;
-    padding: 20px;
+    padding: 30px 10px 30px 10px;
     margin-top: 70px;
     margin-bottom: 70px;
     border-radius: 10px;
@@ -32,27 +33,68 @@
 
 /* === Input === */
 .input {
-    width: auto;
+    width: 90%;
     height: auto;
+    margin: auto;
 }
 
+/* Input (Nome, E-mail, Nome imobiliária) */
+#company-ecdc0bf7-c1a3-402c-a8cc-3287f107a3ab,
+#email-ecdc0bf7-c1a3-402c-a8cc-3287f107a3ab,
+#imob_nome_da_imobiliaria-ecdc0bf7-c1a3-402c-a8cc-3287f107a3ab {
+    width: 88%;
+    padding-left: 12%;
+    background-size: 6%;
+    background-position: center left 10px;
+    background-repeat: no-repeat;
+}
+
+#company-ecdc0bf7-c1a3-402c-a8cc-3287f107a3ab {
+    background-image: url('https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/icons/name.svg');
+}
+
+#email-ecdc0bf7-c1a3-402c-a8cc-3287f107a3ab {
+    background-image: url('https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/icons/email.svg');
+}
+
+#imob_nome_da_imobiliaria-ecdc0bf7-c1a3-402c-a8cc-3287f107a3ab {
+    margin-bottom: 40px;
+    background-image: url('https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/icons/book.svg');
+}
+
+/* Wrapper Radios */
+.hs_imob_possui_software_de_gest_o_de_imobiliaria {
+    width: 80%;
+    margin: auto;
+}
+
+.hs-form-radio {
+    width: 100%;
+    flex-direction: column;
+    margin-left: -50px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* All input */
 .input input {
-    width: 90%;
+    width: auto;
     height: 40px;
-    border: 1px solid silver;
+    border: 2px solid #d0d2da;
     outline: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
     font-size: 1.4em;
     line-height: 20px;
     border-radius: 5px;
-    padding-left: 10%;
 }
 
 .input input:focus {
     border: 1px solid rgb(66, 186, 255);
 }
 
+
+/* === Messages === */
 #label-company-ecdc0bf7-c1a3-402c-a8cc-3287f107a3ab,
 #label-email-ecdc0bf7-c1a3-402c-a8cc-3287f107a3ab,
 #label-imob_nome_da_imobiliaria-ecdc0bf7-c1a3-402c-a8cc-3287f107a3ab {
@@ -60,19 +102,34 @@
 }
 
 #label-imob_possui_software_de_gest_o_de_imobiliaria-ecdc0bf7-c1a3-402c-a8cc-3287f107a3ab span {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 14px;
+    color: #7c7c7c;
 }
 
 .hs-error-msg,
 .hs-main-font-element {
+    font-size: 12px;
+    line-height: 16px;
     margin-bottom: 10px;
     color: red;
 }
 
-/* Radios */
-.hs-input {
-        
+.hs-main-font-element {
+    width: 100%;
+    padding-top: 20px;
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+.submitted-message p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: rgb(100, 157, 14);
 }
 
 /* === Button === */
@@ -83,9 +140,9 @@
 
 .hs-button {
     width: 200px;
-    height: 50px;
+    height: auto;
     border-radius: 5px;
-    padding: 12px 38px;
+    padding: 12px 60px;
     margin-top: 20px;
     border: 0;
     outline: 0;
@@ -99,16 +156,4 @@
 
 .hs-button:hover {
     box-shadow: 5px 5px 10px 0px rgba(61, 61, 61, 0.336);
-}
-
-/* === Media queries === */
-@media only screen and (max-width: 992px) {
-
-}
-@media only screen and (max-width: 768px) {
-
-}
-@media only screen and (max-width: 670px) {
-    .s3__container__wrapper__form {
-        width: 80%;
 }

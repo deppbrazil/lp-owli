@@ -1,5 +1,6 @@
 /* === Flexbox === */
 .container,
+.s1__container,
 .s4__container,
 .container__wrapper,
 .s2__container__wrapper__content,
@@ -17,10 +18,12 @@
 .navbar {
     width: 100%;
     height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .navbar__container {
-    width: 100%;
+    width: auto;
     max-width: 1000px;
     padding-left: 50px;
     height: auto;
@@ -28,10 +31,11 @@
 }
 
 .brand-superlogica {
-    width: 120px;
-    height: 60px;
+    width: 200px;
+    height: 5vh;
+    min-height: 25px;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
     background-position: center;
     background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/brand/superlogica.svg");
 }
@@ -41,6 +45,14 @@
     width: 100%;
     height: auto;
     min-height: 100vh;
+    margin: auto;
+    position: relative;
+}
+
+.s1__container {
+    width: 100%;
+    height: auto;
+    min-height: 95vh;
     margin: auto;
     position: relative;
 }
@@ -70,13 +82,13 @@
     border: solid transparent;
     border-width: 0 0 1rem 1rem;
     transform:rotate(-45deg);
-    bottom: 20px;
+    bottom: 30px;
     cursor: pointer;
-    transition: 0.9s;
+    transition: 0.3s;
 }
 
 .s1__arrow__bottom:hover {
-    bottom: 10px;
+    bottom: 26px;
 }
 
 .s1__container__images {
@@ -214,6 +226,7 @@
     width: 400px;
     height: auto;
     margin-left: 50px;
+    position: relative;
 }
 
 .s4__container__wrapper__card-phone {
@@ -227,11 +240,11 @@
 }
 
 .s4__container--bg {
-    width: 100%;
-    height: 300px;
+    width: 120%;
+    height: 535px;
+    margin-top: -100px;
     background-position: top;
-    margin-top: -150px;
-    background-size: 110%;
+    background-size: cover;
     position: absolute;
     background-repeat: no-repeat;
     background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/image/background.png");
@@ -300,14 +313,6 @@
         margin-left: -150px;
     }
 
-    .s1__arrow__bottom {
-        bottom: 0;
-    }
-    
-    .s1__arrow__bottom:hover {
-        bottom: -5px;
-    }
-
     /* === Section 2 === */
     .s2__container__wrapper__h1 {
         width: 70%;
@@ -347,7 +352,6 @@
         border: solid transparent;
         border-width: 0 0 1rem 1rem;
         transform:rotate(-45deg);
-        bottom: 20px;
         cursor: pointer;
         transition: 0.9s;
     }
