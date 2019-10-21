@@ -20,4 +20,46 @@
     100% {bottom: 30px;}
 }
 
+/* === Credit Card === */
+.s1__container__images__credit-card {
+    -webkit-animation-name: movieCreditCard; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: movieCreditCard;
+    animation-iteration-count: infinite;
+}
 
+/* Standard syntax */
+@keyframes movieCreditCard {
+    0% {margin-top: -20px;}
+    50% {margin-top: 10px;}
+    100% {margin-top: -20px;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes movieCreditCard {
+    0% {margin-top: -20px;}
+    50% {margin-top: 10px;}
+    100% {margin-top: -20px;}
+}
+
+/* === Phone Card S4 === */
+/* .s1__container__images__credit-card {
+    -webkit-animation-name: movieCreditCard; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: movieCreditCard;
+    animation-iteration-count: infinite;
+} */
+
+/* Standard syntax */
+/* @keyframes movieCreditCard {
+    0% {margin-top: -20px;}
+    50% {margin-top: 10px;}
+    100% {margin-top: -20px;}
+} */
+
+/* Safari 4.0 - 8.0 */
+/* @-webkit-keyframes movieCreditCard {
+    0% {margin-top: -20px;}
+    50% {margin-top: 10px;}
+    100% {margin-top: -20px;}
+} */
