@@ -7,7 +7,7 @@
 }
 
 .bg__black-green--doted {
-    background-image: radial-gradient(circle at 66% 0, #3d3c41, #1d1d1d);
+    background-image: radial-gradient(circle at 66% -12%, #3d3c41, #1d1d1d 46%);
 }
 
 .tx__white {

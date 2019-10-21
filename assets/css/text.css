@@ -35,6 +35,15 @@
     font-weight: 600;
 }
 
+.h1--form {
+    font-size: 2.5em;
+    line-height: 30px;
+    font-family: proxima-nova;
+    font-weight: 100;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
 .h2 {
     font-size: 2.5em;
     line-height: 30px;
@@ -54,4 +63,38 @@
     line-height: 30px;
     font-family: proxima-nova;
     font-weight: 100;
+}
+
+/* === Media queries === */
+@media only screen and (max-width: 992px) {
+    .h1,
+    .h1--light {
+        font-size: 3.5em;
+        line-height: 45px;
+    }
+
+    .h1--light b {
+        font-size: 35px;
+        line-height: 55px;
+    }
+    
+    .h1--small {
+        font-size: 2.2em;
+        line-height: 27px;
+    }
+
+    .h2 {
+        font-size: 1.8em;
+        line-height: 28px;
+    }
+    
+    .p {
+        font-size: 1.8em;
+        line-height: 28px;
+    }
+    
+    .p--small {
+        font-size: 1.6em;
+        line-height: 26px;
+    }
 }

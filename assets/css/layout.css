@@ -1,12 +1,12 @@
 /* === Flexbox === */
 .container,
+.s4__container,
 .container__wrapper,
-.container__wrapper__content,
-.container__wrapper__content__text,
-.container__wrapper__content__text__item,
-.container__wrapper__form,
-.footer,
-.container__wrapper__network {
+.s2__container__wrapper__content,
+.s2__container__wrapper__content__text,
+.s2__container__wrapper__content__text__item,
+.f__footer,
+.f__container__wrapper__network {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -42,6 +42,7 @@
     height: auto;
     min-height: 100vh;
     margin: auto;
+    position: relative;
 }
 
 .container__wrapper {
@@ -54,23 +55,39 @@
 }
 
 /* === Section 1 ===*/
-.container__text {
+.s1__container__text {
     width: 450px;
     height: auto;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.container__images {
+.s1__arrow__bottom {
+    position: absolute;
+    padding: 1rem; /* Arrow size */
+    box-shadow: 1px -1px 0 1px #ffffff inset;
+    -webkit-box-shadow: 2px -2px #ffffff inset;
+    border: solid transparent;
+    border-width: 0 0 1rem 1rem;
+    transform:rotate(-45deg);
+    bottom: 20px;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+.s1__arrow__bottom:hover {
+    bottom: 10px;
+}
+
+.s1__container__images {
     width: auto;
     height: auto;
     right: 0;
     position: relative;
-
 }
 
-.container__images__phone {
-    width: 330px;
+.s1__container__images__phone {
+    width: 280px;
     height: 85vh;
     min-height: 400px;
     max-height: 900px;
@@ -81,8 +98,8 @@
     background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/image/phone.png");
 }
 
-.container__images__credit-card {
-    width: 270px;
+.s1__container__images__credit-card {
+    width: 220px;
     height: 50vh;
     min-height: 250px;
     margin-left: -120px;
@@ -93,9 +110,9 @@
     background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/image/credit-card.png");
 }
 
-.container__images__digital {
-    width: 500px;
-    height: 500px;
+.s1__container__images__digital {
+    width: 450px;
+    height: 450px;
     margin-top: 400px;
     margin-left: -150px;
     opacity: .8;
@@ -107,29 +124,30 @@
 }
 
 /* === Section 2 ===*/
-.container__wrapper__h1 {
+.s2__container__wrapper__h1 {
     width: 70%;
     height: auto;
     padding-top: 70px;
     text-align: center;
 }
 
-.container__wrapper--column {
+.s2__container__wrapper--column {
     flex-direction: column;
 }
 
-.container__wrapper__content {
+.s2__container__wrapper__content {
     width: 100%;
     justify-content: space-around;
 }
 
-.container__wrapper__content__text {
+.s2__container__wrapper__content__text {
+    width: auto;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
 }
 
-.container__wrapper__content__text__icon {
+.s2__container__wrapper__content__text__icon {
     width: 60px;
     height: 60px;
     margin-right: 5px;
@@ -139,42 +157,42 @@
     background-repeat: no-repeat;
 }
 
-.container__wrapper__content__text__icon--metrics {
+.s2__container__wrapper__content__text__icon--metrics {
     background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/icons/metrics.png");
 }
 
-.container__wrapper__content__text__icon--ticket {
+.s2__container__wrapper__content__text__icon--ticket {
     background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/icons/ticket.png");
 }
 
-.container__wrapper__content__text__item {
+.s2__container__wrapper__content__text__item {
     justify-content: flex-start;
 }
 
-.arrow-item-list {
+.s2__arrow-item-list {
     width: 10px;
     height: 10px;
-    margin-right: 5px;  
+    margin-right: 5px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/icons/arrow-item-list.png");
 }
 
-.container__wrapper__content__image__element {
+.s2__container__wrapper__content__image__element {
     margin: 50px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.container__wrapper__content__image__element--money {
+.s2__container__wrapper__content__image__element--money {
     width: 330px;
     height: 330px;
     background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/image/money.png");
 }
 
-.container__wrapper__content__image__element--hand-card {
+.s2__container__wrapper__content__image__element--hand-card {
     width: 480px;
     height: 480px;
     margin-bottom: 0;
@@ -182,26 +200,25 @@
 }
 
 /* === Section 3 === */
-.container__wrapper__text {
+.s3__container__wrapper__text {
     width: 450px;
 }
 
 /* === Section 4 === */
-.container--bg {
-    width: 115%;
-    height: 100%;
-    opacity: .5;
-    margin-top: -100px;
-    background-position: top;
-    background-size: contain;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/image/background.png");
+.s4__container {
+    width: 100%;
+    height: 330px;
 }
 
-.container__wrapper__card-phone {
-    width: 500px;
-    height: 500px;
+.s4__container__wrapper__text {
+    width: 400px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.s4__container__wrapper__card-phone {
+    width: 400px;
+    height: 400px;
     margin-top: -150px;
     background-position: center;
     background-size: contain;
@@ -209,19 +226,30 @@
     background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/image/card-phone.png");
 }
 
+.s4__container--bg {
+    width: 100%;
+    height: 300px;
+    background-position: top;
+    margin-top: -150px;
+    background-size: 110%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/image/background.png");
+}
+
 /* === Footer ===*/
-.footer {
+.f__footer {
     width: 100%;
     height: 100px;
 }
 
-.container__wrapper__network {
+.f__container__wrapper__network {
     width: auto;
     height: auto;
     justify-content: flex-start;
 }
 
-.container__wrapper__network__item {
+.f__container__wrapper__network__item {
     width: 30px;
     height: 30px;
     margin: 10px;
@@ -232,27 +260,215 @@
     transition: all .2s;
 }
 
-.container__wrapper__network__item:hover {
+.f__container__wrapper__network__item:hover {
     opacity: .5;
     transform: translateY(1px);
 }
 
-.container__wrapper__network__item--facebook {
+.f__container__wrapper__network__item--facebook {
     background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/icons/facebook.png");
 }
 
-.container__wrapper__network__item--linkedin {
+.f__container__wrapper__network__item--linkedin {
     background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/icons/linkedin.png");
 }
 
-.container__wrapper__network__item--instagram {
+.f__container__wrapper__network__item--instagram {
     background-image: url("https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/icons/instagram.png");
 }
 
 /* === Media queries === */
 @media only screen and (max-width: 992px) {
+    /* === Section 1 === */
+    .s1__container__text {
+        width: 400px;
+    }
+    .s1__container__images__phone {
+        width: 250px;
+        height: 85vh;
+        max-height: 900px;
+    }
+    .s1__container__images__credit-card {
+        width: 180px;
+        height: 50vh;
+        margin-left: -90px;
+    }
+    .s1__container__images__digital {
+        width: 400px;
+        height: 400px;
+        margin-top: 300px;
+        margin-left: -150px;
+    }
+
+    .s1__arrow__bottom {
+        bottom: 0;
+    }
+    
+    .s1__arrow__bottom:hover {
+        bottom: -5px;
+    }
+
+    /* === Section 2 === */
+    .s2__container__wrapper__h1 {
+        width: 70%;
+        height: auto;
+        text-align: center;
+    }
+    .s2__container__wrapper__content__image__element--money {
+        width: 250px;
+        height: 250px;
+    }
+    .s2__container__wrapper__content__image__element--hand-card {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* === All sections ===*/
     .container__wrapper {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 50px;
         flex-direction: column;
         justify-content: center;
+    }
+    
+    /* === Section 1 === */
+    .s1__container__text {
+        width: 80%;
+    }
+
+    .s1__arrow__bottom {
+        position: absolute;
+        padding: 1rem; /* Arrow size */
+        box-shadow: 1px -1px 0 1px #ffffff inset;
+        -webkit-box-shadow: 2px -2px #ffffff inset;
+        border: solid transparent;
+        border-width: 0 0 1rem 1rem;
+        transform:rotate(-45deg);
+        bottom: 20px;
+        cursor: pointer;
+        transition: 0.9s;
+    }
+    
+    .s1__container__images__phone {
+        width: 250px;
+        height: 50vh;
+        margin-top: 30px;
+    }
+    
+    .s1__container__images__credit-card {
+        width: 200px;
+        height: 50vh;
+        margin-top: -10px;
+        margin-left: -100px;
+    }
+    
+    .s1__container__images__digital {
+        width: 480px;
+        height: 480px;
+        margin-top: 100px;
+        margin-left: -150px;
+    }
+
+    /* === Section 2 === */
+    .s2__container__wrapper__h1 {
+        padding-top: 0;
+    }
+
+    /* === Section 3 === */
+    .s3__container__wrapper__text {
+        width: 80%;
+    }
+
+    /* === Section 4 === */
+    .s4__container {
+        height: auto;
+    }
+    
+    .s4__container__wrapper__text {
+        width: 80%;
+        margin-left: 0;
+    }
+    
+    .s4__container__wrapper__card-phone {   
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+    
+    .s4__container--bg {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    /* === Section 1 === */
+    .s1__container__images__phone {
+        width: 250px;
+        height: 40vh;
+        margin-top: 50px;
+    }
+    
+    .s1__container__images__credit-card {
+        width: 200px;
+        height: 40vh;
+        margin-top: 20px;
+        margin-left: -50px;
+    }
+    
+    .s1__container__images__digital {
+        width: 380px;
+        height: 380px;
+        margin-top: 120px;
+        margin-left: -100px;
+    }
+
+    /* === Section 2 === */
+    .s2__container__wrapper__h1 {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    
+    .s2__container__wrapper__content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .s2__container__wrapper__content--column-reverse {
+        flex-direction: column-reverse;
+    }
+        
+    .s2__container__wrapper__content__text__icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 0;
+    }
+    
+    .s2__container__wrapper__content__image__element {
+        margin: 0;
+    }
+    
+    .s2__container__wrapper__content__image__element--money {
+        width: 230px;
+        height: 230px;
+    }
+    
+    .s2__container__wrapper__content__image__element--hand-card {
+        width: 380px;
+        height: 380px;
+    }
+
+    /* === Section 4 === */
+    .s4__container__wrapper__card-phone {
+        width: 350px;
+    }
+    
+    .s4__container--bg {
+        height: 70%;
+        background-size: cover;
     }
 }
