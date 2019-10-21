@@ -8,15 +8,98 @@
 
 .s3__container__wrapper__form {
     width: 300px;
-    height: 550px;
+    height: auto;
     padding: 20px;
     margin-top: 70px;
     margin-bottom: 70px;
     border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.39);
-    background-color: silver;
+    background-color: #ffffff;
 }
 
+/* === Form === */
+.hbspt-form {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.hs-form {
+    width: 100%;
+    height: auto;
+}
+
+/* === Input === */
+.input {
+    width: auto;
+    height: auto;
+}
+
+.input input {
+    width: 90%;
+    height: 40px;
+    border: 1px solid silver;
+    outline: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    line-height: 20px;
+    border-radius: 5px;
+    padding-left: 10%;
+}
+
+.input input:focus {
+    border: 1px solid rgb(66, 186, 255);
+}
+
+#label-company-ecdc0bf7-c1a3-402c-a8cc-3287f107a3ab,
+#label-email-ecdc0bf7-c1a3-402c-a8cc-3287f107a3ab,
+#label-imob_nome_da_imobiliaria-ecdc0bf7-c1a3-402c-a8cc-3287f107a3ab {
+    display: none;
+}
+
+#label-imob_possui_software_de_gest_o_de_imobiliaria-ecdc0bf7-c1a3-402c-a8cc-3287f107a3ab span {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.hs-error-msg,
+.hs-main-font-element {
+    margin-bottom: 10px;
+    color: red;
+}
+
+/* Radios */
+.hs-input {
+        
+}
+
+/* === Button === */
+.actions {
+    width: 100%;
+    height: 100%;    
+}
+
+.hs-button {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 12px 38px;
+    margin-top: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.6em;
+    font-family: proxima-nova;
+    background-color: #ff7070;
+    transition: all .5s;
+}
+
+.hs-button:hover {
+    box-shadow: 5px 5px 10px 0px rgba(61, 61, 61, 0.336);
+}
 
 /* === Media queries === */
 @media only screen and (max-width: 992px) {
