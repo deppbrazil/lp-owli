@@ -58,22 +58,8 @@
 }
 
 #imob_nome_da_imobiliaria-ecdc0bf7-c1a3-402c-a8cc-3287f107a3ab {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     background-image: url('https://cdn2.hubspot.net/hubfs/3453052/%5BGLOBAL%20ASSETS%5D/icons/book.svg');
-}
-
-/* Wrapper Radios */
-.hs_imob_possui_software_de_gest_o_de_imobiliaria {
-    width: 80%;
-    margin: auto;
-}
-
-.hs-form-radio {
-    width: 100%;
-    flex-direction: column;
-    margin-left: -50px;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 
 /* All input */
@@ -132,6 +118,39 @@
     color: rgb(100, 157, 14);
 }
 
+/* === Select === */
+select {
+    width: 100%;
+    height: 44px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-bottom: 5px;
+    margin-right: 0;
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #d0d2da;
+}
+
+.hs_possui_software_de_gest_o_de_imobili_ria_{
+    width: 350px;
+    height: 100px;
+    margin: auto;
+}
+
+#label-possui_software_de_gest_o_de_imobili_ria_-ecdc0bf7-c1a3-402c-a8cc-3287f107a3ab {
+    margin-bottom: 40px;
+}
+
+#label-possui_software_de_gest_o_de_imobili_ria_-ecdc0bf7-c1a3-402c-a8cc-3287f107a3ab span {
+    width: 100%;
+    font-size: 16px;
+    margin-left: 20px;
+    line-height: 20px;
+    color: #7c7c7c;
+}
+
 /* === Button === */
 .actions {
     width: 100%;
@@ -142,8 +161,7 @@
     width: 200px;
     height: auto;
     border-radius: 5px;
-    padding: 12px 60px;
-    margin-top: 20px;
+    padding: 18px 60px;
     border: 0;
     outline: 0;
     cursor: pointer;
